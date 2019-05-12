@@ -1,6 +1,7 @@
 .idea/
 node_modules/
 test/
+dist/
 .gitignore
 deploy_npm.bat
 package-lock.json
@@ -8,3 +9,5 @@ prepare.bat
 webpack.config.js
 test-key.key
 jsql-webpack-plugin.iml
+*.tgz
+install-local.bat

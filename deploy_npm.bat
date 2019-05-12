@@ -1,4 +1,10 @@
 @echo off
+@chcp 1250 >nul
+
+CALL prepare.bat
+CALL install-local.bat
+CALL npm run test
+
 ECHO Po pojawieniu sie "Username" podaj login do rejestru NPM
 CALL npm login
 
