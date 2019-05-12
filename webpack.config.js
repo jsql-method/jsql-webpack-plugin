@@ -1,20 +1,22 @@
 "use strict";
 
 const webpack = require("webpack");
-const JsqlWebpack = require("./JsqlWebpack");
+const JsqlWebpack = require("./jsql-webpack");
 
 module.exports = {
-    entry: "./JsqlWebpack.js",
+    entry: "./test/test.js",
     output: {
-        filename: "bundle.js"
+        filename: "./test/dist/test.min.js"
     },
     plugins: [
         new JsqlWebpack(
             {
-                apiKey: '==iSqF8rKvVeSgqudKDOXpjiFgGMJh1PbeouIz9IW/YQ==9CI8ox66gogpoSXm6yrU',
-                src: 'scr',
-                dist: 'dist',
-                watcher: ''
+                apiKey: 'dawid.senko@jsql.it',
+                src: 'test/test.js',
+                dist: 'test/dist/test.min.js',
+                devKeyFileName: 'test-key.key',
+                debug: true,
+                local: true
             }
         )
     ]

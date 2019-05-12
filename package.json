@@ -2,26 +2,42 @@
   "name": "jsql-webpack",
   "version": "1.0.1",
   "description": "A webpack plugin to change sql queries to hash for JSQL.",
-  "main": "index.js",
-  "scripts": {},
-  "author": "JSQL",
-  "license": "ISC",
-  "homepage": "http://jsql.it",
+  "main": "jsql-webpack.js",
+  "homepage": "https://jsql.it",
+  "author": {
+    "name": "JSQL Sp.z.o.o. (Ltd, LLC)",
+    "email": "office@jsql.it"
+  },
+  "scripts": {
+    "test": "webpack"
+  },
   "bugs": {
-    "url": "http://jsql.it"
+    "url": "https://jsql.it/product-support"
   },
   "keywords": [
-    "jsql-webpack",
-    "webpackplugin",
+    "jsql-grunt",
+    "jsql grunt",
     "jsql",
     "jsql-it",
     "jsql-optimization"
   ],
+  "licenses": [
+    {
+      "type": "LicenseRef-LICENSE",
+      "url": "https://jsql.it/public-packages-license"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
   "dependencies": {
-    "npm-jsql": "^1.0.4"
+    "jsql-cli": "latest"
+  },
+  "peerDependencies": {
+    "gulp": "^3.9.0"
   },
   "devDependencies": {
-    "webpack": "^4.25.1",
+    "webpack": "^4.31.0",
     "webpack-cli": "^3.1.2"
   }
 }
