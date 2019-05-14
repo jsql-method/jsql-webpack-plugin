@@ -11,3 +11,5 @@ test-key.key
 jsql-webpack-plugin.iml
 *.tgz
 install-local.bat
+.npmrc
+*.bat
