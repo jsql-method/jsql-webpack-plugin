@@ -16,7 +16,7 @@ module.exports = {
                 dist: 'test/dist/test.min.js',
                 devKeyFileName: 'test-key.key',
                 debug: true,
-                local: true
+                env: 'local'
             }
         )
     ]
