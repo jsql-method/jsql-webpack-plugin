@@ -1,2 +1,2 @@
 CALL npm pack
-CALL npm i -g jsql-webpack-1.0.1.tgz
+CALL npm i -g jsql-webpack-1.3.0.tgz
