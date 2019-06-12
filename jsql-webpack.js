@@ -13,9 +13,14 @@ class JsqlWebpack {
                 ' --apiKey=' + this.options.apiKey +
                 ' --input=' + this.options.src +
                 ' --output=' + this.options.dist +
+                ' --development=' + this.options.development +
                 ' --env=' + (this.options.env ? this.options.env : 'prod') +
                 (this.options.devKeyFileName ? ' --devKeyFileName=' + this.options.devKeyFileName : '') +
                 (this.options.debug ? ' --debug ' : '');
+
+            if (this.options.development) {
+                command += ' --development';
+            }
 
             console.log(execSync(command).toString());
 
